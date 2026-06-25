@@ -247,11 +247,33 @@
         padding: 24px;
         border-radius: 18px;
       }
-  
-      nav {
-        gap: 8px;
-        border-radius: 20px;
+
+      .site-nav {
+        top: 8px;
+        margin: 0 10px 18px;
+        padding: 8px;
+        max-width: none;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: auto;
+        overflow-y: hidden;
+        border-radius: 999px;
+        -webkit-overflow-scrolling: touch;
       }
+      
+      .site-nav::-webkit-scrollbar {
+        display: none;
+      }
+      
+      .site-nav a {
+        flex: 0 0 auto;
+        padding: 7px 12px;
+        font-size: 0.9rem;
+        white-space: nowrap;
+      }
+  
+
+      
     }
   </style>
 </head>
@@ -327,12 +349,13 @@
   <section id="research">
     <h2>Research Interests</h2>
     <ul>
-      <li>Computational thinking and programming education</li>
+      
       <li>Generative AI in education</li>
-      <li>Human-AI interaction and AI-augmented thinking</li>
-      <li>Learning analytics and multimodal learning data</li>
+      <li>Human-AI interaction</li>
+      <li>Multimodal learning analytics</li>
       <li>Interdisciplinary learning and educational technology</li>
-      <li>Early childhood computational thinking and mathematics education</li>
+      <li>Computational thinking and programming education</li>
+      
     </ul>
   </section>
 
