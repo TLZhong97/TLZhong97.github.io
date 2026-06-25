@@ -22,6 +22,10 @@
     * {
       box-sizing: border-box;
     }
+    
+    html {
+      scroll-behavior: smooth;
+    }
   
     body {
       margin: 0;
@@ -84,50 +88,60 @@
     }
   
     nav {
-      margin-top: 22px;
+      position: sticky;
+      top: 12px;
+      z-index: 100;
+      margin-top: 24px;
+      padding: 12px;
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+      backdrop-filter: blur(10px);
     }
-  
+    
     nav a {
       display: inline-block;
-      padding: 7px 13px;
-      color: var(--accent);
-      background: var(--accent-light);
+      padding: 8px 14px;
+      color: #334155;
+      background: transparent;
       border-radius: 999px;
       text-decoration: none;
-      font-weight: 600;
-      font-size: 0.94rem;
+      font-weight: 650;
+      font-size: 0.95rem;
     }
-  
+    
     nav a:hover {
+      color: #ffffff;
       background: var(--accent);
-      color: white;
     }
-  
+    
     .links {
-      margin-top: 14px;
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
     }
-  
+    
     .links a {
       display: inline-block;
-      margin-right: 10px;
-      margin-bottom: 8px;
-      padding: 6px 11px;
-      color: var(--accent);
-      border: 1px solid #c7d7fe;
+      padding: 9px 16px;
+      color: #ffffff;
+      background: var(--accent);
       border-radius: 999px;
       text-decoration: none;
-      font-weight: 500;
-      font-size: 0.94rem;
-      background: #fff;
+      font-weight: 700;
+      font-size: 0.95rem;
+      box-shadow: 0 6px 14px rgba(37, 99, 235, 0.22);
     }
-  
+    
     .links a:hover {
-      background: var(--accent);
-      color: #fff;
-      border-color: var(--accent);
+      background: #1d4ed8;
+      color: #ffffff;
+      transform: translateY(-1px);
     }
   
     section {
@@ -138,6 +152,7 @@
       border: 1px solid var(--border);
       border-radius: 22px;
       box-shadow: 0 8px 22px rgba(15, 23, 42, 0.045);
+      scroll-margin-top: 95px;
     }
   
     h2 {
@@ -233,6 +248,7 @@
   
       nav {
         gap: 8px;
+        border-radius: 20px;
       }
     }
   </style>
@@ -254,19 +270,22 @@
         and human-AI interaction in programming learning.
       </p>
 
-      <p class="links">
-        <a href="https://scholar.google.com/citations?user=Lu0-evMAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a>
-        <a href="https://www.linkedin.com/in/tianlong-zhong-359321266/" target="_blank">LinkedIn</a>
-      </p>
 
-      <nav>
+      <div class="external-links">
+        <a href="https://scholar.google.com/citations?user=Lu0-evMAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar ↗</a>
+        <a href="https://www.linkedin.com/in/tianlong-zhong-359321266/" target="_blank">LinkedIn ↗</a>
+      </div>
+
+      <nav class="site-nav">
         <a href="#about">About</a>
         <a href="#education">Education</a>
-        <a href="#research">Research</a>
+        <a href="#research">Interests</a>
         <a href="#publications">Publications</a>
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
       </nav>
+
+      
     </div>
   </div>
 
@@ -479,7 +498,7 @@
     <p class="links">
       <a href="https://scholar.google.com/citations?user=Lu0-evMAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a>
       <a href="https://www.linkedin.com/in/tianlong-zhong-359321266/" target="_blank">LinkedIn</a>
-      <a href="https://github.com/TLZhong97" target="_blank">GitHub</a>
+      
     </p>
   </section>
 
