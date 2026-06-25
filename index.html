@@ -4,82 +4,262 @@
   <meta charset="UTF-8">
   <title>Tianlong Zhong</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <style>
     body {
-      max-width: 850px;
-      margin: 60px auto;
+      max-width: 980px;
+      margin: 56px auto;
       padding: 0 24px;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-      line-height: 1.6;
+      line-height: 1.65;
       color: #222;
+      background: #fff;
     }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      margin-bottom: 36px;
+    }
+
+    .profile-photo {
+      width: 190px;
+      height: 190px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 1px solid #ddd;
+    }
+
     h1 {
-      margin-bottom: 4px;
+      margin-bottom: 6px;
+      font-size: 2.2rem;
     }
+
     .subtitle {
-      color: #666;
+      color: #555;
       margin-top: 0;
+      font-size: 1.05rem;
     }
+
     nav {
-      margin: 28px 0;
+      margin: 26px 0;
     }
+
     nav a {
       margin-right: 18px;
       color: #0056b3;
       text-decoration: none;
+      font-weight: 500;
     }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     section {
-      margin-top: 36px;
+      margin-top: 38px;
     }
-    .pub {
+
+    h2 {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 6px;
       margin-bottom: 16px;
+    }
+
+    h3 {
+      margin-bottom: 4px;
+    }
+
+    .item {
+      margin-bottom: 18px;
+    }
+
+    .date {
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    .pub {
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    a {
+      color: #0056b3;
+    }
+
+    @media (max-width: 720px) {
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .profile-photo {
+        width: 160px;
+        height: 160px;
+      }
     }
   </style>
 </head>
 
 <body>
-  <h1>Tianlong Zhong</h1>
-  <p class="subtitle">PhD Candidate | Nanyang Technological University</p>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#research">Research</a>
-    <a href="#publications">Publications</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <div class="header">
+    <img class="profile-photo" src="profile.png" alt="Tianlong Zhong">
+
+    <div>
+      <h1>Tianlong Zhong</h1>
+      <p class="subtitle">
+        PhD Candidate in Education | Nanyang Technological University
+      </p>
+      <p>
+        I am a PhD candidate whose research focuses on computational thinking,
+        learning analytics, multimodal learning data, generative AI in education,
+        and human-AI interaction in programming learning.
+      </p>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </div>
 
   <section id="about">
     <h2>About</h2>
     <p>
-      I am a PhD candidate in Education at The University of Hong Kong.
-      My research focuses on AIED, multimodal learning analytics, and AI-supported programming education.
+      My work examines how learners engage with emerging technologies, including
+      generative AI, programming environments, multimodal learning analytics, and
+      computational thinking activities. I am particularly interested in how
+      human-AI interaction can support learners' thinking processes, problem
+      solving, and interdisciplinary learning.
     </p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+
+    <div class="item">
+      <h3>Nanyang Technological University</h3>
+      <div class="date">2023–present</div>
+      <p>PhD Candidate</p>
+    </div>
+
+    <div class="item">
+      <h3>University College London</h3>
+      <div class="date">2019–2020</div>
+      <p>MA in Education and Technology</p>
+    </div>
+
+    <div class="item">
+      <h3>Beijing Normal University</h3>
+      <div class="date">2015–2019</div>
+      <p>BA in Educational Technology</p>
+    </div>
   </section>
 
   <section id="research">
     <h2>Research Interests</h2>
     <ul>
-      <li>Multimodal learning analytics</li>
-      <li>AI-mediated thinking</li>
-      <li>Generative AI in programming education</li>
-      <li>Human–AI interaction and learner agency</li>
+      <li>Computational thinking and programming education</li>
+      <li>Generative AI in education</li>
+      <li>Human-AI interaction and AI-augmented thinking</li>
+      <li>Learning analytics and multimodal learning data</li>
+      <li>Interdisciplinary learning and educational technology</li>
+      <li>Early childhood computational thinking and mathematics education</li>
     </ul>
   </section>
 
   <section id="publications">
     <h2>Selected Publications</h2>
+
     <p class="pub">
-      Zhong, T. et al. Paper title. <em>Journal / Conference</em>.
+      Zhong, T., & Zhu, G. (2026). AI as a thinking partner: Rethinking human
+      cognitive processes in the age of generative AI.
+      <em>Interactive Learning Environments</em>, 1–22.
+      <a href="https://doi.org/10.1080/10494820.2026.2680598">https://doi.org/10.1080/10494820.2026.2680598</a>
     </p>
+
     <p class="pub">
-      More publications will be added soon.
+      Zhong, T., Zhu, G., Hou, C., Wang, Y., & Fan, X. (2024). The influences of
+      ChatGPT on undergraduate students' demonstrated and perceived interdisciplinary learning.
+      <em>Education and Information Technologies</em>.
+      <a href="https://doi.org/10.1007/s10639-024-12787-9">https://doi.org/10.1007/s10639-024-12787-9</a>
     </p>
+
+    <p class="pub">
+      Zhong, T., Zhu, G., Lim, K. Y., & Ong, Y. S. (2025). AI-augmented Thinking:
+      Exploring Human-AI Interaction in Generative AI-supported Programming Learning.
+      <em>Proceedings of the International Conference of the Learning Sciences</em>, 2907–2908.
+      <a href="https://doi.org/10.22318/icls2025.401388">https://doi.org/10.22318/icls2025.401388</a>
+    </p>
+
+    <p class="pub">
+      Zhong, T., Cai, C., Zhu, G., & Ma, M. (2024). Enhancing the Analysis of
+      Interdisciplinary Learning Quality with GPT Models: Fine-Tuning and
+      Knowledge-Empowered Approaches. In <em>Artificial Intelligence in Education</em>,
+      157–165.
+      <a href="https://doi.org/10.1007/978-3-031-64312-5_19">https://doi.org/10.1007/978-3-031-64312-5_19</a>
+    </p>
+
+    <p class="pub">
+      Full publication list available upon request.
+    </p>
+  </section>
+
+  <section id="experience">
+    <h2>Teaching & Research Experience</h2>
+
+    <div class="item">
+      <h3>National Institute of Education</h3>
+      <p>
+        Guest lecturer and teaching assistant for courses related to learning analytics,
+        multimodal learning data, evaluation methods, and learning sciences.
+      </p>
+    </div>
+
+    <div class="item">
+      <h3>Codemao, Shenzhen</h3>
+      <p>
+        Conducted research on online programming learning, dropout prediction,
+        learning behavior analysis, knowledge graphs, and cognitive diagnosis models.
+      </p>
+    </div>
+
+    <div class="item">
+      <h3>Maker Education Lab, Beijing Normal University</h3>
+      <p>
+        Participated in research and teaching activities related to block-based programming,
+        maker education, Micro:bit, Arduino, and computational thinking.
+      </p>
+    </div>
+  </section>
+
+  <section id="awards">
+    <h2>Awards</h2>
+    <ul>
+      <li>Top 3, IGP 3MT, Nanyang Technological University, 2025</li>
+      <li>Winner, iTL 2023 Design-a-thon, NIE and Google, 2023</li>
+      <li>Honourable Mention Prize, Interdisciplinary Contest in Modeling, 2018</li>
+      <li>First-Class Scholarship, Beijing Normal University, 2018</li>
+    </ul>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: tianlongzhong1@gmail.com</p>
-    <p>Google Scholar | ORCID | LinkedIn | GitHub</p>
+    <p>Email: tianlong001@e.ntu.edu.sg</p>
+    <p>
+      Google Scholar | ORCID | LinkedIn | GitHub
+    </p>
   </section>
+
 </body>
 </html>
